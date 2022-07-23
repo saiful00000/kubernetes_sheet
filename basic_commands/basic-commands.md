@@ -1,13 +1,21 @@
 # Kubernetes Basic Commands
 
-get and list down all nodes
+Get and list down all nodes
 
-```
+```bash
 cubectl get nodes
 ```
 
-to check health condition of kubernetes components
+To check health condition of kubernetes components
 
-```
+```bash
 kubectl get componentstatus
 ```
+
+To view cluster information
+
+```bash
+kubectl cluster-info
+```
+
+
