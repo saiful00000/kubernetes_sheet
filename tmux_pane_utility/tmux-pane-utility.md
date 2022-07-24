@@ -1,5 +1,7 @@
 # Synchronize Command Panes Using TMUX
 
+First of all open up your terminal. Then follow along.
+
 ## First create a new session
 
 ```bash
