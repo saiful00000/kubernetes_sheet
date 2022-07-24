@@ -29,3 +29,17 @@ eg: tmux new -t random
 ```bash
 [Ctrl + b] :setw synchronize-panes
 ```
+
+## Detach from currently attached session
+
+> Session
+
+```bash
+Ctrl+ b d or Ctrl+ b :detach
+```
+
+Screen
+
+```bash
+Ctrl+ a Ctrl+ d or Ctrl+ a :detach
+```
