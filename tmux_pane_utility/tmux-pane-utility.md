@@ -1,6 +1,6 @@
 # Synchronize Command Panes Using TMUX
 
-First create a new session
+## First create a new session
 
 ```bash
 tmux new -t [session_name]
