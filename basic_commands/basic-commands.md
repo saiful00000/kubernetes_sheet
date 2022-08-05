@@ -17,5 +17,3 @@ To view cluster information
 ```bash
 kubectl cluster-info
 ```
-
-
