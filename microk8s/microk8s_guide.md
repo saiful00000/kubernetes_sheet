@@ -53,3 +53,25 @@ We will deploy a basic nginx demo application to our kubernetes cluster using mi
 ```bash
 microk8s kubectl create deployment nginx --image=nginx
 ```
+
+### Scale the nginx pod
+
+We are going to scale up our nginx deployment into 2 replicas.
+
+```bash
+microk8s kubectl scale deploy nginx --replicas=2
+```
+
+## Status of services
+
+```bash
+microk8s inspect
+```
+
+### Start and Stop microk8s
+
+```bash
+microk8s start
+
+microk8s stop
+```
