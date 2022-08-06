@@ -75,3 +75,23 @@ microk8s start
 
 microk8s stop
 ```
+
+### For minitor and Trubleshooting
+
+```bash
+microk8s inspect
+```
+
+### For reseting the cluster
+
+For reseting the cluster only
+
+```bash
+microk8s reset
+```
+
+For resting the cluster and all data that created by the luster
+
+```bash
+microk8s reset --destroy-storage
+```
