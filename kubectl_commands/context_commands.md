@@ -23,3 +23,9 @@ kubectl config set-context ${CONTEXT_NAME} --namespace=${NAMESPACE_NAME} --user=
 ```
 kubectl config use-context ${CONTEXT_NAME}
 ```
+
+## Check current context
+
+```
+kubectl config current-context
+```

@@ -19,7 +19,7 @@ kubectl get namespaces
 ## Switch between namespaces
 
 ```
-
+kubectl config use-context ${CONTEXT_NAME}
 ```
 
 ## View all pods / deployments / services from a specific namespaces
