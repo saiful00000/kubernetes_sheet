@@ -5,6 +5,8 @@
 ### Basic command
 
 ```bash
+kubectl config view
+
 kubectl get all
 
 kubectl get all -o wide

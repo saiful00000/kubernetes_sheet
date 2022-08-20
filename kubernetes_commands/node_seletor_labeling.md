@@ -52,3 +52,55 @@ kubectl label pods foo status=unhealthy --resource-version=1
 ```
 kubectl label pods foo bar-
 ```
+
+## Example pod yaml config file for selecting nodes by node name or label
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: nginx
+  name: nginx-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: nginx
+  template:
+    metadata:
+      labels:
+        run: nginx
+    spec:
+      #specify the node name to select while pod
+      nodeName: kworker2
+      containers:
+      - image: nginx
+        name: nginxi
+
+```
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: nginx
+  name: nginx-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: nginx
+  template:
+    metadata:
+      labels:
+        run: nginx
+    spec:
+      containers:
+      - image: nginx
+        name: nginxi
+      nodeSelector:
+        # specify your label here to select node accordingly
+        env: shaiful
+```

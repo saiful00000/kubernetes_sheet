@@ -15,13 +15,13 @@ kubectl config-view
 ## Create a new context
 
 ```
-kubectl config set-context ${CONTEXT_NAME} --namespace=${NAMESPACE_NAME} --user=${USER_NAME} --cluster=${CLUSTER_NAME}
+kubectl config set-context <context-name> --namespace=<namespce-name> --user=<user-name> --cluster=<cluster-name>
 ```
 
 ## Switch between contexts
 
 ```
-kubectl config use-context ${CONTEXT_NAME}
+kubectl config use-context <context-name>
 ```
 
 ## Check current context
