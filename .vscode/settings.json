@@ -1,0 +1,5 @@
+{
+    "yaml.completion": true,
+    "yaml.format.proseWrap": "preserve",
+    "yaml.format.singleQuote": false
+}
